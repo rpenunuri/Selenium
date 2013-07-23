@@ -21,7 +21,7 @@ public class ComposePage extends PageBase{
 	@FindBy(css = "img[class='Y1']")
 	private WebElement webMoreOptions;
 	
-	@FindBy(css = "div[class]") 
+	@FindBy(css = "div[class='']") 
 	private WebElement webCheckSpelling;
 	
 	public ComposePage(WebDriver driver)
