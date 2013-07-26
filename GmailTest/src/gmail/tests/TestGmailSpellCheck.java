@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -19,7 +19,8 @@ public class TestGmailSpellCheck {
 	private String username = "youremail@gmail.com";
 	private String password = "password";
 	
-	@BeforeSuite(alwaysRun=true)
+	//@BeforeSuite(alwaysRun=true)
+	@BeforeClass
 	public void initializeClass()
 	{
 		driver = new FirefoxDriver();		
@@ -31,7 +32,7 @@ public class TestGmailSpellCheck {
 		driver.manage().deleteAllCookies();
 	}
 	
-	@Test
+	@Test(description="Verify that Gmail's spell checking function finds expected misspelling errors")
 	public void testSpellCheckFindsErrors()
 	{
 		LoginPage loginPage =  PageFactory.initElements((driver), LoginPage.class);			
