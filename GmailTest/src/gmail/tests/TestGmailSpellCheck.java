@@ -16,8 +16,8 @@ import org.testng.annotations.Test;
 public class TestGmailSpellCheck {
 	
 	private static WebDriver driver;
-	private String username = "rpenunuri@nearsoft.com";
-	private String password = "Marlb0r04$#";
+	private String username = "youremail@gmail.com";
+	private String password = "password";
 	
 	@BeforeSuite(alwaysRun=true)
 	public void initializeClass()

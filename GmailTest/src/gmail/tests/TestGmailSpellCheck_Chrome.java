@@ -18,8 +18,8 @@ import org.testng.annotations.BeforeSuite;
 public class TestGmailSpellCheck_Chrome {
 	
 	private static WebDriver driver;
-	private String username = "raul.penunuri@gmail.com";
-	private String password = "Marlb0r05%$";
+	private String username = "youremail@gmail.com";
+	private String password = "password";
 	
 	@BeforeSuite(alwaysRun=true)
 	public void beforeSuite() {
